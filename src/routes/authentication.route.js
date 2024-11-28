@@ -6,7 +6,7 @@ import authenticationController from '../controllers/authentication.controller.j
 const router = express.Router();
 
 // Define routes
-router.post('/signup', authenticationController.signup);
+router.post('/register', authenticationController.signup);
 router.post('/login', authenticationController.login);
 router.post('/logout', authenticationController.logout);
 

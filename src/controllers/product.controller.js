@@ -35,7 +35,7 @@ const getOneProduct = async (req, res) => {
     }
 };
 
-// // Get all examples
+// // Get all products
 const getAllProduct = async (req, res) => {
     try {
         const product = await Product.find();

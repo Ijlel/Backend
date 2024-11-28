@@ -19,7 +19,7 @@ const createCategory = async (req, res) => {
         await newcategory.save();
         return res.status(201).json({ payload: newcategory });
     } catch (error) {
-        handleError(res, error, "Error in creating category", 500);
+        handleError(res, error, "Error in creating category backend", 500);
     }
 }
 
@@ -82,7 +82,6 @@ const deleteCategory = async (req, res) => {
         handleError(res, error, "Error in deleting category", 500);
     }
 };
-
 
 const categoryController = {createCategory,getOneCategory, getAllCategory,updateCategory, deleteCategory}
 

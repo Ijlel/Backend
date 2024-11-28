@@ -12,9 +12,9 @@ const router = Router();
 router.use('/examples', exampleRoutes);
 router.use('/users', userRoutes);
 router.use('/category', categoryRoutes);
-router.use('/product', productRoutes);
+router.use('/products', productRoutes);
 router.use('/commande', commandeRoutes);
-router.use('/authentication', authRoute);
+router.use('/auth', authRoute);
 
 
 export default router;
